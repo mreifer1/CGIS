@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-const FetchButton = () => {
+const FetchButton = ({userData}) => {
 
     const getNewUser = () => {
         axios.get("https://randomuser.me/api")
         .then((res) => {
-            newUserData(res.data);
+            userData(res.data);
         })
         .catch((err) => {
             console.log(err);
