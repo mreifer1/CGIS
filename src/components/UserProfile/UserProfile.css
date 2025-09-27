@@ -5,7 +5,7 @@
   justify-content: center;
   gap: 4rem;
   padding: 2rem;
-  min-height: 100vh;
+
 }
 
 .leftColumn {
@@ -34,20 +34,22 @@
 .userInfo {
   list-style-type: none;
   padding: 2rem;
-  line-height: 3rem;
-  font-size: 2rem;
+  line-height: 7.5rem;
+  font-size: 1.25rem;
   color: white;
   border: 2px solid white;
   border-radius: 1rem;
-  max-width: 700px;
+  width: 550px;
+  min-height: 400px; 
 }
 
 .buttonContainer {
   margin-top: 1rem;
 }
 
-.desktopOnly {
-  display: block;
+.imgContainer,
+.userInfo {
+  margin-top: 2rem;
 }
 
 .mobileOnly {
@@ -58,7 +60,8 @@
   .container {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+    padding: 0 1rem 1rem 1rem;
   }
 
   .imgContainer {
@@ -66,10 +69,17 @@
   }
 
   .userInfo {
+    margin-top: 0;
     font-size: 1rem;
     max-width: 90%;
     padding: 1rem;
     line-height: 2rem;
+    min-height: 210px; 
+    width: 300px;
+  }
+
+  .buttonContainer{
+    margin-top: 0;
   }
 
   .desktopOnly {
@@ -77,9 +87,8 @@
   }
 
   .mobileOnly {
-    display: block;
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: center;
   }
 }
