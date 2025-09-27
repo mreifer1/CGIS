@@ -35,11 +35,11 @@
   list-style-type: none;
   padding: 2rem;
   line-height: 7.5rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: white;
   border: 2px solid white;
   border-radius: 1rem;
-  width: 550px;
+  width: 750px;
   min-height: 400px; 
 }
 
@@ -90,5 +90,9 @@
     display: flex;
     width: 100%;
     justify-content: center;
+  }
+
+  button{
+    font-size: 1.2rem;
   }
 }
